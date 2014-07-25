@@ -27,6 +27,12 @@ Image.class_eval do
         :watermark_position => "SouthWest",
         :format => :png,
       },
+      :huge => {
+          :geometry => '1000x1000>',
+          :watermark_path => "#{Rails.root.to_s}/public/images/watermarks/huge.png",
+          :watermark_position => "SouthWest",
+          :format => :png,
+      },
     }, 
     :default_style => :product,
     :url => "/assets/products/:id/:style/:basename.:extension",
